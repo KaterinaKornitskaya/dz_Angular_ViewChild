@@ -19,14 +19,14 @@ import {MatInputModule} from '@angular/material/input';
 
 // Экспортируется класс компонента AppComponent, в котором определяется модель name.
 export class AppComponent {
-    newCiteMy : string;
+    newCiteMain : string;
     name = "";
 
     @ViewChild(ChildComponent1)
     private child1Comp: ChildComponent1;
 
-    addCiteInMain() : void{
-        this.child1Comp.addNew();
+    addCiteInMain() : void{     
+        this.child1Comp.addNew(this.newCiteMain);
     }
 
     newLink:string = "";

@@ -19,13 +19,8 @@ export class ChildComponent1  {
         Потому что ленивый человек найдет легкий способ eё выполнить.`;
     cites:string[] = [this.cite2, this.cite3, this.cite4, this.cite5];
 
-    @Input() newCite: string;
-
-   
-    newC: string;
-
-    addNew():void{
-        this.cites.push(this.newCite);
+    addNew(newCite):void{
+        this.cites.push(newCite);
     }
 
   }

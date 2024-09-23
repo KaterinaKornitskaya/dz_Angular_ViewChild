@@ -2,13 +2,13 @@
     <form class="example-form">
         <mat-form-field class="example-full-width">
           <mat-label>Напишите свою цитату</mat-label>
-          <input matInput [(ngModel)]="newCiteMy">
+          <input matInput [(ngModel)]="newCiteMain">
         </mat-form-field>     
     </form>
 
     <button (click)="addCiteInMain()" mat-raised-button>Добавить цитату</button>
 
-    <child1_comp [newCite]="newCiteMy"></child1_comp>
+    <child1_comp></child1_comp>
 
     <mat-divider></mat-divider>   
     <child2_comp></child2_comp>
